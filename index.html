@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Infinite Agenda</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="header">Infinite Agenda</div>
+
+<div class="container"></div>
+
+<div class="pop">
+	<form method="post" id="new-event">
+		<div>
+			<p>Title of Event</p>
+			<input class="event-title" type="text" name="title">
+		</div>
+			<p>Time</p>
+			<select class="choose-hour">
+				<option value="12">12:00</option>
+				<option value="1">1:00</option>
+				<option value="2">2:00</option>
+				<option value="4">4:00</option>
+				<option value="5">5:00</option>
+				<option value="6">6:00</option>
+				<option value="7">7:00</option>
+				<option value="8">8:00</option>
+				<option value="9">9:00</option>
+				<option value="10">10:00</option>
+				<option value="11">11:00</option>
+			</select>
+			<select class="choose-min">
+				<option value="00">00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				<option value="45">45</option>
+			</select>
+			<select class="choose-amPm">
+				<option value="AM">AM</option>
+				<option value="PM">PM</option>
+			</select>
+		<div>
+			<p>Description</p>
+			<input class="description"type="text" name="description">
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="submit-btn">
+		</div>
+	</form>
+</div>
+	
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="date.js"></script>
+  <script src="event.js"></script>
+  <script src="makeCal.js"></script>
+
+
+</body>
+</html>
